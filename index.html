@@ -16,7 +16,7 @@
  <div class="header" id="topheader">
 
  
- <nav class="navbar navbar-expand-lg fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
      <div class="container text-uppercase p-2">
     <a class="navbar-brand font-weight-bold text-white" href="#">universal informatics</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +29,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">service</a>
+          <a class="nav-link" href="#servicediv">service</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">price</a>
+            <a class="nav-link" href="#pricingdiv">price</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#newsletterid">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#contactid">contact</a>
           </li>
           
         
@@ -52,8 +52,8 @@
           <h1 class="font-weight-bold">We are The web Devlopers </h1>
           <p>we create the worlds best website</p>
           <div class="header-buttons">
-              <a href="#">AboutUs</a>
-              <a href="#">Contact</a>
+              <a href="#newsletterid">AboutUs</a>
+              <a href="#contactid">Contact</a>
           </div>
       </div>
   </section>
@@ -184,7 +184,7 @@
     <div class="container d-flex justify-content-around align-items-center text-center">
         <div>
             <h1 class="count">1500</h1>
-            <p>CMSInstalletion</p>
+            <p>CMS Installetion</p>
         </div>
         <div>
             <h1 class="count">2500</h1>
@@ -402,14 +402,14 @@
 
 
 <!--************************* contact us part starts*******************************---->
-<section class="contactus"id="contactid">
+<section class="contactus" id="contactid">
     <div class="container headings text-center">
         <h1 class="text-center font-weight-bold">CONTACT US</h1>
         <p class="text-center">We Are Here To Help Any Questiob You Might Have.We Look Forword To Hearing From You</p>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+            <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
                 <form action="/action_page.php">
                     <div class="form-group">
                       
@@ -516,7 +516,7 @@
 <div class="mt-5 text-center">
     <p>Copyright @2019 All rights reserved | this template is made with love by Universal informatics</p>
 </div>
-<div  class="scrolltop float-right">
+<div  class="scrollTop  float-right">
     <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
 </div>
 </div>
@@ -533,6 +533,7 @@
             delay:10,
             time:3000
            })
+          
            //get the button
            mybutton=document.getElementById("myBtn");
            //when the user scroll down20px from the top of the document ,show the button
@@ -546,8 +547,9 @@
            }
            //when the user click on the button,scroll to the top of the document
            function topFunction(){
-          Document.documentElement.scrollTop=0;
-           }
+          document.body.scrollTop=0;
+            }
+  
         </script>
     </body>
 </html>

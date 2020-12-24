@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{ margin: 0;padding: 0;box-sizing: border-box;
     font-family: 'Poppins', sans-serif;}
 a{text-decoration: none;}
@@ -424,3 +428,30 @@ font-size: 0.85rem;
     background: #606060;
 }
 /************************* footer css part end*******************************/
+/************************* media queries*******************************/
+@media(max-width:768px){
+    .nav-item{
+        text-align: center!important;
+    }
+    .pricing,.happy-clints,.contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    .contactus p{
+        padding: 0 50px;
+    }
+    .footer-div:nth-child(2){
+        text-align: left!important;
+  }
+  .footer-div{
+      margin: 30px 0;
+  }
+
+
+
+
+/************************* media queries*******************************/
